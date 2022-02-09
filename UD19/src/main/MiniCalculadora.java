@@ -11,7 +11,7 @@ public class MiniCalculadora extends JFrame implements ActionListener {
 
 	public MiniCalculadora() {
 		setLayout(null);
-		// text fields
+		
 		operando1 = new JTextField();
 		operando1.setBounds(100, 100, 100, 20);
 		add(operando1);
