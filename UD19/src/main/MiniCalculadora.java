@@ -1,7 +1,6 @@
 package main;
 
 import javax.swing.*;
-
 import java.awt.event.*;
 
 public class MiniCalculadora extends JFrame implements ActionListener {
@@ -19,35 +18,42 @@ public class MiniCalculadora extends JFrame implements ActionListener {
 		operando2.setBounds(100, 130, 100, 20);
 		add(operando2);
 		resultado = new JTextField();
+		resultado.setEditable(false);
 		resultado.setBounds(100, 160, 100, 20);
 		add(resultado);
-		// buttons
-		restar = new JButton("Restar");
-		restar.setBounds(220, 100, 100, 50);
-		add(restar);
-		restar.addActionListener(this);
-
+		// Botones
+		
+		//Sumar
 		sumar = new JButton("Sumar");
 		sumar.setBounds(220, 160, 100, 50);
 		add(sumar);
 		sumar.addActionListener(this);
-
+		
+		//Restar
+		restar = new JButton("Restar");
+		restar.setBounds(220, 100, 100, 50);
+		add(restar);
+		restar.addActionListener(this);
+		
+		//Multiplicar
 		multiplicar = new JButton("Multiplicar");
 		multiplicar.setBounds(220, 220, 100, 50);
 		add(multiplicar);
 		multiplicar.addActionListener(this);
-
+		
+		//Dividir
 		dividir = new JButton("Dividir");
 		dividir.setBounds(220, 280, 100, 50);
 		add(dividir);
 		dividir.addActionListener(this);
-
+		
+		//Salir
 		cerrar = new JButton("Salir");
-		cerrar.setBounds(100, 200, 100, 50);
+		cerrar.setBounds(100, 280, 100, 50);
 		add(cerrar);
 		cerrar.addActionListener(this);
 
-		// labels
+		// Texto
 		titulo = new JLabel("Calculadora");
 		titulo.setBounds(130, 40, 200, 30);
 		add(titulo);
@@ -107,14 +113,5 @@ public class MiniCalculadora extends JFrame implements ActionListener {
 			System.exit(0);
 		}
 	}
-
-	public static void main(String[] ar) {
-		MiniCalculadora ope = new MiniCalculadora();
-		ope.setBounds(10, 10, 400, 400);
-		ope.setResizable(false);
-		ope.setVisible(true);
-	}
-
-	
 }
 
