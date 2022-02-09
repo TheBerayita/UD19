@@ -2,7 +2,7 @@ package main;
 
 import javax.swing.*;
 
-import java.awt.event.*; // agregamos esto tambien para el boton.
+import java.awt.event.*;
 
 public class MiniCalculadora extends JFrame implements ActionListener {
 	private JTextField operando1, operando2, resultado;
@@ -108,11 +108,13 @@ public class MiniCalculadora extends JFrame implements ActionListener {
 		}
 	}
 
-
 	public static void main(String[] ar) {
 		MiniCalculadora ope = new MiniCalculadora();
 		ope.setBounds(10, 10, 400, 400);
 		ope.setResizable(false);
 		ope.setVisible(true);
 	}
+
+	
 }
+
