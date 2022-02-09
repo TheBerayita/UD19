@@ -1,4 +1,4 @@
-package main;
+package calculadora;
 
 import javax.swing.*;
 import java.awt.event.*;

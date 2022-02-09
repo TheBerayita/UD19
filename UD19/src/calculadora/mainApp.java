@@ -1,4 +1,4 @@
-package main;
+package calculadora;
 
 public class mainApp {
 	public static void main(String[] ar) {
