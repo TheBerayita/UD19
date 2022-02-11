@@ -2,8 +2,6 @@ package saludar;
 
 import java.awt.EventQueue;
 
-import Views.Saludador;
-
 public class mainApp {
 
 		public static void main(String[] args) {
